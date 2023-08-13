@@ -1,11 +1,13 @@
 let div = document.querySelector("div");
 let saludarBtn = document.querySelector("button");
 
-div.addEventListener("click", function() {
+div.addEventListener("click", function conte() {
   alert("Hola! Soy el div");
 });
 
-saludarBtn.addEventListener("click", function() {
-    saludarBtn.removeEventListener("click", alert("Hola! Soy el div"));
-  alert("Hola!");
-  });
+function Problema() {
+    alert("Hola!");
+    div.removeEventListener("click", conte);
+  }
+  
+  saludarBtn.addEventListener("click", Problema);
