@@ -1,9 +1,9 @@
-let conte = document.getElementById("container");
+let conte = document.querySelector("div");
 
 function alerta(){
-    conte.addEventListener("click", function() {
+    
         alert("Hola! Soy el div");
-      });
+      
 }
 
-alerta()
+conte.addEventListener("click", alerta());
