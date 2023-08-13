@@ -6,6 +6,6 @@ div.addEventListener("click", function() {
 });
 
 saludarBtn.addEventListener("click", function() {
-    event.stopPropagation(); // Detener la propagación del evento
+    saludarBtn.removeEventListener("click", alert("Hola! Soy el div"));
   alert("Hola!");
   });
