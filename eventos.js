@@ -1,13 +1,12 @@
+
 let div = document.querySelector("div");
 let saludarBtn = document.querySelector("button");
 
-div.addEventListener("click", function conte() {
+div.addEventListener("click", function() {
   alert("Hola! Soy el div");
 });
 
-function Problema() {
-    alert("Hola!");
-    div.removeEventListener("click", conte);
-  }
-  
-  saludarBtn.addEventListener("click", Problema);
+saludarBtn.addEventListener("click", function(event) {
+  event.stopPropagation(); // Detener la propagación del evento
+  alert("Hola!");
+});
