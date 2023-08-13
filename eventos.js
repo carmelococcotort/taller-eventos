@@ -1,3 +1,5 @@
-let conte = document.querySelector("div");
+let div = document.querySelector("div");
 
-conte.addEventListener("click", alert("Hola! Soy el div"));
+div.addEventListener("click", function() {
+  alert("Hola! Soy el div");
+});
